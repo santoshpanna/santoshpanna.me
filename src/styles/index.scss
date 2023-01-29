@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --base-color: #2D2D2D; 
+    --base-color-light: #D4CDC5; 
+    --base-color-dark: #2D2D2D; 
+    --container-max-width: 1024px; 
+  }
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  font-size: 16px;
+  overflow-x: hidden;
+  color: var(--base-color-light);
+  z-index: 1;
+}
+
+.gradient {
+  background-color:hsla(271,0%,0%,1);
+  background-image:
+  radial-gradient(at 95% 21%, rgba(9, 255, 0, 0.042) 0px, transparent 50%),
+  radial-gradient(at 34% 38%, rgba(162, 32, 213, 0.067) 0px, transparent 50%),
+  radial-gradient(at 27% 23%, rgba(235, 0, 4, 0.06) 0px, transparent 50%),
+  radial-gradient(at 65% 33%, rgba(68, 0, 255, 0.08) 0px, transparent 50%),
+  radial-gradient(at 3% 96%, rgba(114, 39, 75, 0.25) 0px, transparent 50%),
+  radial-gradient(at 91% 81%, rgba(131, 62, 147, 0.084) 0px, transparent 50%);
+  z-index: -2;
+}
+
+a {
+  text-decoration: none;
+  color: var(--base-color-light);
+}
+
+header {
+  width: 100vw;
+  min-height: 2rem;
+  color: var(--base-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+footer {
+  display: flex;
+  color: var(--base-color-light);
+  @media screen and (max-width : 1024px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  max-width: var(--container-max-width);
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  
+
+  main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    color: var(--base-color-light);
+    padding-top: 6rem;
+    margin: 0 auto;
+    max-width: var(--container-max-width);
+    width: 100%;
+
+    @media screen and (max-width : 1024px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  css-doodle {
+    position: fixed;
+    z-index: -1;
+    min-height: 100%;
+    max-height: 100%;
+    width: 100%;
+    opacity: 0.25;
+
+
+    --rule: (
+      :doodle {
+        @grid: 5 / 100vmax;
+      }
+      transition: .2s ease @rand(.6s);
+      will-change: transform;
+      
+      width: 300%;
+      height: @rand(200%);
+      transform:
+        rotate(-30deg)
+        translate(5px, 5px);
+
+      border-top: 1px solid hsla(
+        calc(5 + 2 * @index()), 90%, 75%,
+        @rand(.8)
+      );
+    );
+  }
+}
+
+
+.lottie-animated-icons {
+  height: 2rem;
+  width: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

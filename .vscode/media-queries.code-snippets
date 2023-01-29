@@ -1,0 +1,71 @@
+{
+	"Media Query All": {
+		"prefix": "_media_all",
+		"body": [
+			"/* Very Large Devices, Wide Screens */",
+			"@media screen and (max-width : 1600px) {}",
+			"/* Large Devices */",
+			"@media screen and (max-width : 1200px) {}",
+			"/* Medium Devices, Desktops */",
+			"@media screen and (max-width : 992px) {}",
+			"/* Small Devices, Tablets */",
+			"@media screen and (max-width : 768px) {}",
+			"/* Small Devices, Phones */",
+			"@media screen and (max-width : 576px) {}",
+			"/* Extra Small Devices, Phones */",
+			"@media screen and (max-width : 480px) {}",
+			"/* Custom, iPhone Retina */",
+			"@media screen and (max-width : 320px) {}"
+		],
+		"description": "show media queries"
+	},
+	"Media Query 1600px": {
+		"prefix": "m-1600",
+		"body": [
+			"@media screen and (max-width : 1600px) {$0}"
+		],
+		"description": "show media queries"
+	},
+	"Media Query 1200px": {
+		"prefix": "m-1200",
+		"body": [
+			"@media screen and (max-width : 1200px) {$0}"
+		],
+		"description": "show media queries"
+	},
+	"Media Query 992px": {
+		"prefix": "m-992",
+		"body": [
+			"@media screen and (max-width : 992px) {$0}"
+		],
+		"description": "show media queries"
+	},
+	"Media Query 768px": {
+		"prefix": "m-768",
+		"body": [
+			"@media screen and (max-width : 768px) {$0}"
+		],
+		"description": "show media queries"
+	},
+	"Media Query 576px": {
+		"prefix": "m-576",
+		"body": [
+			"@media screen and (max-width : 576px) {$0}"
+		],
+		"description": "show media queries"
+	},
+	"Media Query 480px": {
+		"prefix": "m-480",
+		"body": [
+			"@media screen and (max-width : 480px) {$0}"
+		],
+		"description": "show media queries"
+	},
+	"Media Query 320px": {
+		"prefix": "m-320",
+		"body": [
+			"@media screen and (max-width : 320px) {$0}"
+		],
+		"description": "show media queries"
+	},
+}
