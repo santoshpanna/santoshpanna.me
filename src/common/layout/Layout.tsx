@@ -36,19 +36,19 @@ const Layout = (props: any) => {
       })
     }
   
-    let interval = setInterval(update, 4000);
+    let interval = setInterval(update, 200);
 
     const updateCssDoodle = () => {
       clearInterval(interval)
       update()
-      interval = setInterval(update, 4000)
+      interval = setInterval(update, 200)
     }
     
     window.addEventListener('click', updateCssDoodle);
     
     return () => {
       window.removeEventListener('resize', handleResize);
-      window.removeEventListener('click', updateCssDoodle);
+      // window.removeEventListener('click', updateCssDoodle);
     }
 
     
